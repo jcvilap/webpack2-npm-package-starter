@@ -1,0 +1,40 @@
+{
+  "name": "innovation-ui-kit-alpha",
+  "version": "0.0.4",
+  "description": "Set of reusable JavaScript components and styles for faster development and code standards across UI apps",
+  "main": "dist/lib/webpack-numbers.js",
+  "module": "src/index.js",
+  "repository": "https://github.pwc.com/innovation/ui-kit",
+  "author": "Julio C. Vila <jcvilap@gmail.com>",
+  "license": "MIT",
+  "files": ["dist/lib"],
+  "scripts": {
+    "build": "webpack -p --config demo/webpack.config.js",
+    "dev": "webpack-dev-server --config demo/webpack.config.js",
+    "prepublish": "webpack -p --config lib/webpack.config.js",
+    "lib": "webpack -p --config lib/webpack.config.js --progress --colors --profile"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2016": "^6.24.1",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.16",
+    "css-loader": "^0.28.2",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
+    "html-loader": "^0.4.5",
+    "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.3",
+    "react": "^15.5.4",
+    "sass-loader": "^6.0.5",
+    "webpack": "^2.6.0",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "peerDependencies": {
+    "react": "^0.14.9 || >=15.3.0",
+    "react-dom": "^0.14.9 || >=15.3.0"
+  }
+}
